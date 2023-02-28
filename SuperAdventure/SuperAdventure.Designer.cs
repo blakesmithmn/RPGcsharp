@@ -36,7 +36,6 @@
             lblGold = new Label();
             lblExperience = new Label();
             lblLevel = new Label();
-            btnTest = new Button();
             SuspendLayout();
             // 
             // label1
@@ -108,22 +107,11 @@
             lblLevel.Size = new Size(0, 15);
             lblLevel.TabIndex = 7;
             // 
-            // btnTest
-            // 
-            btnTest.Location = new Point(30, 150);
-            btnTest.Name = "btnTest";
-            btnTest.Size = new Size(75, 23);
-            btnTest.TabIndex = 8;
-            btnTest.Text = "Test";
-            btnTest.UseVisualStyleBackColor = true;
-            btnTest.Click += btnTest_Click;
-            // 
             // SuperAdventure
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(719, 651);
-            Controls.Add(btnTest);
             Controls.Add(lblLevel);
             Controls.Add(lblExperience);
             Controls.Add(lblGold);
@@ -149,6 +137,5 @@
         private Label lblGold;
         private Label lblExperience;
         private Label lblLevel;
-        private Button btnTest;
     }
 }
