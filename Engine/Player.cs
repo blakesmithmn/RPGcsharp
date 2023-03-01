@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    public class Player
+    public class Player : LivingCreature
     {
-        public int CurrentHitPoints { get; set; }
-        public int MaximumHitPoints { get; set; }
+        // these lines were previously included but since we added 'Item' as a parent class 'HealingPotion' can inherit those properties and they are no longer neede here
+
+        // public int CurrentHitPoints { get; set; }
+        //  public int MaximumHitPoints { get; set; }
         public int Gold { get; set; }
         public int ExperiencePoints { get; set; }
         public int Level { get; set; }  
