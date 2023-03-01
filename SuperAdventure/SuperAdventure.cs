@@ -28,7 +28,7 @@ namespace SuperAdventure
             // _player.MaximumHitPoints = 10;
             // _player.Gold = 20;
            //  _player.ExperiencePoints = 0;
-           /  _player.Level = 1;
+           //  _player.Level = 1;
             // these lines told the labels what to display - so later as we change these the display should update! ToString is called because the 'Text' property is a string not an int
             lblHitPoints.Text = _player.CurrentHitPoints.ToString();
             lblGold.Text = _player.Gold.ToString();
