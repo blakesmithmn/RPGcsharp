@@ -190,7 +190,7 @@
             rtbLocation.Location = new Point(347, 19);
             rtbLocation.Name = "rtbLocation";
             rtbLocation.ReadOnly = true;
-            rtbLocation.Size = new Size(350, 105);
+            rtbLocation.Size = new Size(360, 105);
             rtbLocation.TabIndex = 17;
             rtbLocation.Text = "";
             // 
@@ -199,7 +199,7 @@
             rtbMessages.Location = new Point(347, 130);
             rtbMessages.Name = "rtbMessages";
             rtbMessages.ReadOnly = true;
-            rtbMessages.Size = new Size(350, 105);
+            rtbMessages.Size = new Size(360, 286);
             rtbMessages.TabIndex = 18;
             rtbMessages.Text = "";
             // 
