@@ -21,18 +21,15 @@ namespace SuperAdventure
             InitializeComponent();
 
             Location location = new Location(1, "Home", "This is your house.");
-            location.ID = 1;
-            location.Name = "Home";
-            location.Description = "This is your house.";
             // initializing a new player object - and assigning it to the _player private class
-            _player = new Player();
+            _player = new Player(10, 10, 20, 0, 1);
             // these are the values being assigned to our new player object
-            _player.CurrentHitPoints = 10;
-            _player.MaximumHitPoints = 10;
-            _player.Gold = 20;
-            _player.ExperiencePoints = 0;
-            _player.Level = 1;
-            // these lines tell the labels what to display - so later as we change these the display should update! ToString is called because the 'Text' property is a string not an int
+            // _player.CurrentHitPoints = 10;
+            // _player.MaximumHitPoints = 10;
+            // _player.Gold = 20;
+           //  _player.ExperiencePoints = 0;
+           /  _player.Level = 1;
+            // these lines told the labels what to display - so later as we change these the display should update! ToString is called because the 'Text' property is a string not an int
             lblHitPoints.Text = _player.CurrentHitPoints.ToString();
             lblGold.Text = _player.Gold.ToString();
             lblExperience.Text = _player.ExperiencePoints.ToString();
