@@ -37,8 +37,6 @@
             lblExperience = new Label();
             lblLevel = new Label();
             label5 = new Label();
-            cboWeapons = new Label();
-            cboPotions = new Label();
             btnUseWeapon = new Button();
             btnUsePotion = new Button();
             btnNorth = new Button();
@@ -49,6 +47,8 @@
             rtbMessages = new RichTextBox();
             dbvInventory = new DataGridView();
             dgvQuests = new DataGridView();
+            cboWeapons = new ComboBox();
+            cboPotions = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dbvInventory).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvQuests).BeginInit();
             SuspendLayout();
@@ -130,22 +130,6 @@
             label5.Size = new Size(76, 15);
             label5.TabIndex = 8;
             label5.Text = "Select Action";
-            // 
-            // cboWeapons
-            // 
-            cboWeapons.AutoSize = true;
-            cboWeapons.Location = new Point(369, 559);
-            cboWeapons.Name = "cboWeapons";
-            cboWeapons.Size = new Size(0, 15);
-            cboWeapons.TabIndex = 9;
-            // 
-            // cboPotions
-            // 
-            cboPotions.AutoSize = true;
-            cboPotions.Location = new Point(369, 593);
-            cboPotions.Name = "cboPotions";
-            cboPotions.Size = new Size(0, 15);
-            cboPotions.TabIndex = 10;
             // 
             // btnUseWeapon
             // 
@@ -253,11 +237,29 @@
             dgvQuests.Size = new Size(312, 189);
             dgvQuests.TabIndex = 20;
             // 
+            // cboWeapons
+            // 
+            cboWeapons.FormattingEnabled = true;
+            cboWeapons.Location = new Point(369, 559);
+            cboWeapons.Name = "cboWeapons";
+            cboWeapons.Size = new Size(121, 23);
+            cboWeapons.TabIndex = 21;
+            // 
+            // cboPotions
+            // 
+            cboPotions.FormattingEnabled = true;
+            cboPotions.Location = new Point(369, 593);
+            cboPotions.Name = "cboPotions";
+            cboPotions.Size = new Size(121, 23);
+            cboPotions.TabIndex = 22;
+            // 
             // SuperAdventure
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(719, 651);
+            Controls.Add(cboPotions);
+            Controls.Add(cboWeapons);
             Controls.Add(dgvQuests);
             Controls.Add(dbvInventory);
             Controls.Add(rtbMessages);
@@ -268,8 +270,6 @@
             Controls.Add(btnNorth);
             Controls.Add(btnUsePotion);
             Controls.Add(btnUseWeapon);
-            Controls.Add(cboPotions);
-            Controls.Add(cboWeapons);
             Controls.Add(label5);
             Controls.Add(lblLevel);
             Controls.Add(lblExperience);
@@ -299,8 +299,6 @@
         private Label lblExperience;
         private Label lblLevel;
         private Label label5;
-        private Label cboWeapons;
-        private Label cboPotions;
         private Button btnUseWeapon;
         private Button btnUsePotion;
         private Button btnNorth;
@@ -311,5 +309,7 @@
         private RichTextBox rtbMessages;
         private DataGridView dbvInventory;
         private DataGridView dgvQuests;
+        private ComboBox cboWeapons;
+        private ComboBox cboPotions;
     }
 }
