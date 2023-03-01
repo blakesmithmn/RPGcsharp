@@ -22,7 +22,7 @@ namespace SuperAdventure
 
             Location location = new Location(1, "Home", "This is your house.");
             // initializing a new player object - and assigning it to the _player private class
-            _player = new Player(10, 10, 20, 0, 1);
+            _player = new Player(10, 10, 25, 0, 1);
             // these are the values being assigned to our new player object
             // _player.CurrentHitPoints = 10;
             // _player.MaximumHitPoints = 10;
