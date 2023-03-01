@@ -19,6 +19,11 @@ namespace SuperAdventure
         public SuperAdventure()
         {
             InitializeComponent();
+
+            Location location = new Location(1, "Home", "This is your house.");
+            location.ID = 1;
+            location.Name = "Home";
+            location.Description = "This is your house.";
             // initializing a new player object - and assigning it to the _player private class
             _player = new Player();
             // these are the values being assigned to our new player object
